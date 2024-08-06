@@ -1,0 +1,9 @@
+transformers==4.45.2
+torch==2.4.0
+torchvision==0.19
+datasets==3.0.1
+trl==0.11.3
+peft
+wandb
+accelerate==0.34.2
+bitsandbytes==0.43.3

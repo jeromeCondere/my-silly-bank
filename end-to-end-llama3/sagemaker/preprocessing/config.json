@@ -1,0 +1,13 @@
+{
+    "region": "us-east-1",
+    "bucket": "<value>",
+    "role": "<value>",
+    "sagemaker_root": "data/source/bank/preprocessing",
+    "profile": "<value>",
+    "instance": "ml.t3.medium",
+    "job_name": "create-bank-training-data",
+    "hf_token": "<token>",
+    "aws_access_key_id": "<value>",
+    "aws_secret_access_key": "<value>",
+    "aws_session_token": "<value>"
+}
