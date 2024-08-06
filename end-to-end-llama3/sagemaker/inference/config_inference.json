@@ -1,0 +1,14 @@
+{
+    "region": "us-east-1",
+    "bucket": "<value>",
+    "role": "<value>",
+    "sagemaker_root": "data/source/bank",
+    "profile": "<value>",
+    "instance": "ml.g5.2xlarge",
+    "hf_task": "<value>",
+    "aws_access_key_id": "<value>",
+    "aws_secret_access_key": "<value>",
+    "aws_session_token": "<value>",
+    "endpoint_name": "bank-endpoint"
+
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.csv
+.ipynb_checkpoints/
+sagemaker/cred.txt
+sagemaker/inference/pytorch_model.bin
+sagemaker/inference/train_script.py
+vocab.txt
+compose/
+*.log
+*.tar.gz

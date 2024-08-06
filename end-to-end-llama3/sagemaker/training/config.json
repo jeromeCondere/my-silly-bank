@@ -1,0 +1,20 @@
+{
+	"region": "us-east-1",
+	"bucket": "<value>",
+	"role": "<value>",
+	"output": "data/source/models/",
+	"hyperparameters": {
+         "per_device_train_batch_size" : 2, 
+         "per_device_eval_batch_size" : 2,
+         "gradient_accumulation_steps" : 1,
+         "save_steps" : 4,
+         "eval_steps" : 175,
+         "max_steps" : 10,
+         "epochs": 3,
+         "wandb_token": "<value>",
+         "hf_token": "<value>"
+	},
+    "profile": "<value>",
+    "instance": "ml.g4dn.xlarge"
+
+}
