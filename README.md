@@ -19,10 +19,10 @@ I'm going to assume that I'm in the worst case scenario. Let's say that I am an 
 
 ## The chapters
 So I am going to present several use cases scenario for my silly bank   
-**Chapter 1**
+**Chapter 1**  
 The scenario: I just want to develop a chatbot for my bank so clients can query information via text. I know this is not the ideal use case for LLMs, but it's a basic starting point to explore the productionization part.  
-Go in the end-to-end-llama3 to see the project. 
-**Chapter 2 (WIP)**
-The scenario: I want to build a system that allows investigators to query the bank’s information system to identify fraudulent transaction patterns in customer histories. This chapter is still a work in progress.
-**Chapter 3 (WIP)**
+Go in the end-to-end-llama3 to see the project.   
+**Chapter 2 (WIP)**  
+The scenario: I want to build a system that allows investigators to query the bank’s information system to identify fraudulent transaction patterns in customer histories. This chapter is still a work in progress.  
+**Chapter 3 (WIP)**  
 The scenario: Similar to Chapter 2, but in addition to detecting fraud patterns, I also want my system to be able to generate data visualizations to help analysts interpret the results. This chapter is also still a work in progress.

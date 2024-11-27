@@ -6,5 +6,6 @@ sagemaker/inference/pytorch_model.bin
 sagemaker/inference/train_script.py
 vocab.txt
 compose/
+jupyter/
 *.log
 *.tar.gz
