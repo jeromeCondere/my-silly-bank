@@ -44,7 +44,7 @@ def chat_loop(chat,sagemaker_client, endpoint_name):
         last_message = chat.get_chat_last_message_from_chat_template(new_chat_messages['response'])
 
 
-        chat.add_message(role="system", content=last_message['content'])
+        chat.add_message(role="system", content=last_message['content'], message_type = 'response')
 
         messages_to_display = chat.get_last_messages_to_display()
 
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     else:
         print('------------Running normal mode -------------------')
         os.environ['AWS_DEFAULT_PROFILE'] = profile
-        session = boto3.session.Session(profile_name='profile-admin')
+        session = boto3.session.Session(profile_name=profile)
         sagemaker_client = session.client('sagemaker-runtime')
         chat_loop(chat,sagemaker_client, endpoint_name)
 

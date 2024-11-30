@@ -2,6 +2,7 @@ from account import Account
 from stock import Stock
 from verbose_logger import VerboseLogger
 import re
+from nltk import sent_tokenize
 
 class Chat:
 
@@ -15,7 +16,15 @@ class Chat:
 
 
 
-    def add_message(self, role, content):
+    def add_message(self, role, content, message_type = 'question'):
+
+        if message_type == 'response':
+            content_split = sent_tokenize(content)
+            if len(content_split)>= 2:
+                content = ' '.join(content_split[:2])
+            else:
+                content =  content_split[0]
+
         message = {'role': role, 'content': content}
         display_messages, hidden_messages = self.get_equivalent_display(message)
         self.display_chat.extend(display_messages)
