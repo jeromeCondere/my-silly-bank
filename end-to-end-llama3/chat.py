@@ -214,7 +214,7 @@ class Chat:
                     val_company = val_company_match.group(1)
                     replace_stock = re.sub(r'###StockValue\((\d+(\.\d+)?)\)',  f'{val_stock_bought}$', message['content'])
                     replace_company = re.sub(r'###Company\((.+)\)',  val_company, replace_stock)
-                    message_updated = { 'role': 'system' ,  'content': re.sub(r'###LastTransactions\((\d+)\)', '', message['content']) }
+                    message_updated = { 'role': 'system' ,  'content': replace_company }
                     messages_to_return.append(message_updated)
 
                 else:

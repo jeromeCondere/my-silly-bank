@@ -3,7 +3,6 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from os import listdir
 from os.path import isfile, join
-from huggingface_hub import snapshot_download
 import os
 
 def model_fn(model_dir, context=None):
